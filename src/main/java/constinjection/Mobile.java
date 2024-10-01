@@ -1,23 +1,13 @@
-package springm17;
+package constinjection;
 
 public class Mobile {
 
 	private int id;
 	private String name;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
+	
+	public Mobile(int id, String name) {
+		super();
 		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -25,5 +15,5 @@ public class Mobile {
 	public String toString() {
 		return "Mobile [id=" + id + ", name=" + name + "]";
 	}
-
+	
 }

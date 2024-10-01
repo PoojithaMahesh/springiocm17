@@ -1,9 +1,11 @@
-package springm17;
+package dependencyinjection;
 
 public class Mobile {
-
+	
 	private int id;
 	private String name;
+	
+	private Charger charger;
 
 	public int getId() {
 		return id;
@@ -21,9 +23,18 @@ public class Mobile {
 		this.name = name;
 	}
 
+	public Charger getCharger() {
+		return charger;
+	}
+
+	public void setCharger(Charger charger) {
+		this.charger = charger;
+	}
+
 	@Override
 	public String toString() {
-		return "Mobile [id=" + id + ", name=" + name + "]";
+		return "Mobile [id=" + id + ", name=" + name + ", charger=" + charger + "]";
 	}
+	
 
 }
